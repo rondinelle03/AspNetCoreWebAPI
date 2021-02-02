@@ -6,16 +6,16 @@ namespace SmartSchool.WebAPI.Models
         {
 
         }
-        public AlunoDisciplina(int alunoId, int discilinaId)
+        public AlunoDisciplina(int alunoId, int disciplinaId)
         {
             this.AlunoId = alunoId;
-            this.DiscilinaId = discilinaId;
+            this.DisciplinaId = disciplinaId;
             
 
         }
         public int AlunoId { get; set; }
         public Aluno Aluno { get; set; }
-        public int DiscilinaId { get; set; }
+        public int DisciplinaId { get; set; }
         public Disciplina Disciplina { get; set; }
     }
 }

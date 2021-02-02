@@ -33,6 +33,7 @@ namespace SmartSchool.WebAPI
                 )
             );
             services.AddControllers();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SmartSchool.WebAPI", Version = "v1" });
