@@ -57,3 +57,5 @@ C:\Users\User\Desktop\SmartSchool\SmartSchool.WebAPI\bin\Debug\net5.0\Microsoft.
 C:\Users\User\Desktop\SmartSchool\SmartSchool.WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\User\Desktop\SmartSchool\SmartSchool.WebAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\User\Desktop\SmartSchool\SmartSchool.WebAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\User\Desktop\SmartSchool\SmartSchool.WebAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\User\Desktop\SmartSchool\SmartSchool.WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
