@@ -41,10 +41,41 @@ namespace SmartSchool.WebAPI
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IRepository, Repository>();
+
+            services.AddVersionedApiExplorer(options => 
+            {
+                options.GroupNameFormat = "'v'VVV";
+                options.SubstituteApiVersionInUrl = true;
+            })
+            .AddApiVersioning(options =>
+            {
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.DefaultApiVersion = new ApiVersion(1,0);
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.ReportApiVersions = true;
+            });
             
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SmartSchool.WebAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "SmartSchool API", 
+                    Version = "v1",
+                    TermsOfService =  new Uri("http://r4handon.com.br"),
+                    Description = "Descrição aqui!",
+                    License = new Microsoft.OpenApi.Models.OpenApiLicense
+                    {
+                        Name = "SmartSchool License",
+                        Url = new Uri("http://r4handon.com")
+                    },
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact
+                    {
+                        Name = "Rondinelle",
+                        Email = "",
+                        Url = new Uri("http://globo.com")
+                    }
+
+                    }
+                );
             });
         }
 
