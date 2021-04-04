@@ -11,7 +11,7 @@ namespace SmartSchool.WebAPI.Controllers
 {
     [ApiController]
     [ApiVersion("2.0")]
-    [Route("api/v{version:apiVersion}[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class ProfessorController : ControllerBase
     {
       
